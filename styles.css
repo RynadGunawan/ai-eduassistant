@@ -1,0 +1,185 @@
+/* styles.css - Kompatibel Mode Gelap/Terang */
+
+/* Gaya header utama */
+.main-header {
+    text-align: center;
+    padding: 2rem 0;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Kartu fitur - adaptif dengan tema */
+.feature-card {
+    background: var(--feature-card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--feature-card-border);
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Gaya flashcard - adaptif */
+.flashcard {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.flashcard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Gaya jawaban */
+.correct-answer {
+    background: var(--success-background);
+    border: 1px solid var(--success-border);
+    border-radius: 5px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+}
+
+.user-answer {
+    background: var(--warning-background);
+    border: 1px solid var(--warning-border);
+    border-radius: 5px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+}
+
+/* Bilah kemajuan */
+.progress-bar {
+    height: 12px;
+    background: var(--progress-background);
+    border-radius: 6px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    border-radius: 6px;
+    transition: width 0.5s ease;
+}
+
+/* Kotak tip belajar - Diperbarui */
+.learning-tip {
+    background: var(--tip-background);
+    border-left: 4px solid var(--tip-border-color);
+    padding: 12px;
+    border-radius: 0 8px 8px 0;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: var(--tip-text-color);
+}
+
+/* Header sidebar */
+.sidebar-header {
+    text-align: center;
+    padding: 1rem;
+    background: var(--feature-card-bg);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.sidebar-header h2 {
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.sidebar-header p {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Variabel CSS untuk Mode Terang (bawaan) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1e1e1e;
+        --card-background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);
+        --border-color: #404040;
+        --text-primary: #ffffff;
+        --text-secondary: #b0b0b0;
+        --success-background: #1e3a1e;
+        --success-border: #2d4a2d;
+        --warning-background: #3a3a1e;
+        --warning-border: #4a4a2d;
+        --progress-background: #404040;
+        
+        /* Variabel kartu fitur - mode gelap */
+        --feature-card-bg: linear-gradient(135deg, #2a2a3a 0%, #1a1a2e 100%);
+        --feature-card-border: #9a86fd;
+        
+        /* Variabel tip belajar - mode gelap */
+        --tip-background: #1e2a3a;
+        --tip-text-color: #bbdefb;
+        --tip-border-color: #64b5f6;
+    }
+}
+
+/* Penyampingan kelas mode gelap manual */
+[data-theme="dark"] {
+    --background-color: #1e1e1e;
+    --card-background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);
+    --border-color: #404040;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --success-background: #1e3a1e;
+    --success-border: #2d4a2d;
+    --warning-background: #3a3a1e;
+    --warning-border: #4a4a2d;
+    --progress-background: #404040;
+    
+    /* Variabel kartu fitur - penyampingan mode gelap */
+    --feature-card-bg: linear-gradient(135deg, #2a2a3a 0%, #1a1a2e 100%);
+    --feature-card-border: #9a86fd;
+    
+    /* Variabel tip belajar - penyampingan mode gelap */
+    --tip-background: #1e2a3a;
+    --tip-text-color: #bbdefb;
+    --tip-border-color: #64b5f6;
+}
+
+/* Peningkatan responsif tambahan */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-card {
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+    
+    .flashcard {
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+}

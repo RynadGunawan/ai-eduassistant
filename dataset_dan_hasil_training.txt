@@ -1,0 +1,3 @@
+Link dataset: https://www.kaggle.com/datasets/linkgish/indosum/code
+Hasil training: https://colab.research.google.com/drive/1HwAIqLAPZs1FpD7XKTcUJKyjp-w5OgV1?usp=sharing
+GitHub repo: https://github.com/RynadGunawan/ai-eduassistant

@@ -1,0 +1,25 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Consolas",
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": true,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Abyss",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorCustomizations": {
+        "editorLineNumber.activeForeground": "#F6F606",
+        "editor.foreground": "#81F7F3",
+        "editor.selectionBackground": "#051CFD"
+    },
+    "editor.tokenColorCustomizations": {
+        "comments": "#F6F606",
+        "strings": "#19d800"
+    },
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "iostream": "cpp",
+        "cmath": "cpp"
+    },
+}
+
